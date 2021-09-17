@@ -1,0 +1,62 @@
+body {
+    background-color: white;
+    user-select: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 6px;
+    padding: 4px;
+    background-color:white;
+    max-width: 360px;
+}
+
+.item {
+    background-color: #e9ecee;;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+form {
+    max-width: 100%;
+}
+
+input {
+    width: 98.5%;
+    height: 60px;
+    outline: none;
+    font-size: 30px;
+    text-align: right;
+    
+    border-radius: 4px;
+}
+
+.input {
+    grid-column: 1/-1;
+    padding: 0;
+}
+
+.clear {
+    grid-column: 1/3;
+}
+.back {
+    grid-column: 3/-1;
+}
+.eql {
+    grid-column: 4;
+    grid-row: 4/8;
+    background-color: #4285f4;
+}
+.zero {
+    grid-column: 1/3;
+}
+.sign {
+    background-color: #c0c2c4;
+}
