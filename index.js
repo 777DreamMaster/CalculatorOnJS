@@ -22,3 +22,24 @@ function equal(){
         document.form.textview.value = eval(expr);
     }
 }
+
+document.onkeydown = function(e){
+    var code = e.keyCode;
+    if (code > 95 && code < 106 || code > 47 && code < 58){
+        if (code > 95){
+            code = code - 48;
+        }
+        insert(String.fromCharCode(code));
+    }
+    if (code == 8) remove();
+
+    if (code == 106) insert('×');
+    if (code == 107) insert('+');
+    if (code == 109) insert('-');
+    if (code == 110) insert('.');
+    if (code == 111) insert('÷');
+
+    if (code == 13) equal();
+    console.log(code)
+       
+}
